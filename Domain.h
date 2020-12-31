@@ -8,7 +8,7 @@ private:
 	int nodes_in_v_direction;
 
 public:
-	Domain();
+	Domain(int nodes_in_u_direction, int nodes_in_v_direction);
 	~Domain();
 };
 

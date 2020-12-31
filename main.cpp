@@ -5,6 +5,6 @@
 
 int main(int argc, char ** argv){
 
-    Domain d;
+    Domain d(1,1);
     return 0;
 }

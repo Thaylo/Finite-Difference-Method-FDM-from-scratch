@@ -3,7 +3,7 @@
 
 
 
-Domain::Domain()
+Domain::Domain(int nodes_in_u_direction, int nodes_in_v_direction)
 {
     std::cout << "Hello Domain!" << std::endl;
 }

@@ -1,5 +1,5 @@
 all:
-	g++ *.cpp -otest
+	clang++ *.cpp -otest
 clean:
 	rm *.o | true
 	rm test | true
