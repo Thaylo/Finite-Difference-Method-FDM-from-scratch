@@ -1,7 +1,10 @@
 #include <iostream>
+#include "Domain.h"
+
+
 
 int main(int argc, char ** argv){
 
-    std::cout << "Hello world!" << std::endl;
+    Domain d;
     return 0;
 }
