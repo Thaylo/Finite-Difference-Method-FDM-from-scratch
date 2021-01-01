@@ -2,6 +2,9 @@
 #define NODE_H
 
 #include <vector>
+#include <iostream>
+
+using namespace std;
 
 
 
@@ -12,11 +15,15 @@ private:
 
 public:
 	Node(int id, double u_coordinate, double v_coordinate);
-	double get_u_coordinate();
-    double get_v_coordinate();
+
+	int get_id() const;
+	double get_u_coordinate() const;
+    double get_v_coordinate() const;
+	
     ~Node();
 };
 
+ostream& operator<<(ostream& os, const Node& node);
 
 
 #endif /* NODE_H */

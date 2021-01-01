@@ -1,6 +1,8 @@
 #include "Domain.h"
 #include <iostream>
 #include <vector>
+#include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -21,8 +23,6 @@ Domain::Domain(
     this->x_end = x_end;
     this->y_initial = y_initial;
     this->y_end = y_end;
-
-    cout << "Hello Domain!" << endl;
 }
 
 void Domain::buildMesh(NodeDistributionStrategy strategy)
@@ -62,6 +62,23 @@ void Domain::buildMesh(NodeDistributionStrategy strategy)
             return;
         }
     }
+}
+
+
+void Domain::exportMesh(string filename)
+{
+    ofstream meshfile;
+    meshfile.open (filename);
+
+    for(int i = 0; i < this->nodes_in_u_direction; i++)
+    {
+        for(int j = 0; j < this->nodes_in_v_direction; j++)
+        {
+            meshfile << (*(this->mesh[i]))[j];
+        }
+    }
+
+    meshfile.close();
 }
 
 

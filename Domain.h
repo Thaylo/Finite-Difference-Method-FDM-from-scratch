@@ -3,6 +3,7 @@
 
 #include "Node.h"
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -28,6 +29,7 @@ public:
 		double y_end);
 
 	void buildMesh(NodeDistributionStrategy strategy);
+	void exportMesh(string filename);
 
 	~Domain();
 };
