@@ -8,6 +8,8 @@ private:
 	double x_initial, x_end, y_initial, y_end;
 
 public:
+	Domain();
+	
 	Domain(
 		double x_initial,
 		double x_end,

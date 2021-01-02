@@ -18,7 +18,7 @@ private:
 	int id;
 	int nodes_in_u_direction;
 	int nodes_in_v_direction;
-	Domain domain = Domain(0,0,0,0);
+	Domain domain;
 	vector<vector <Node> *> mesh;
 
 public:

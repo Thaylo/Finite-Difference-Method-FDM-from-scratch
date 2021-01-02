@@ -3,7 +3,13 @@
 
 using namespace std;
 
-
+Domain::Domain()
+{
+    this->x_initial = 0;
+    this->x_end = 0;
+    this->y_initial = 0;
+    this->y_end = 0;
+}
 
 Domain::Domain(
 		double x_initial,
